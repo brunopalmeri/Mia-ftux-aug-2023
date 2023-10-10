@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bruno Portifolio</title>
+
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Gabarito&display=swap" rel="stylesheet">
+
+
 </head>
 
 
 <body>
 
     <!-- Header - Start -->
-    <header>
-
-        <img src="https://source.unsplash.com/random/80x80/?logo,nike/" alt="">
+    <header class="container">
+        <img src="https://source.unsplash.com/random/80x80/?logo,nike/" alt="" class="img-feat">
         <nav>
             <a href="#">Portifolio</a>
             <a href="#">About Me</a>
@@ -20,14 +28,16 @@
             <a href="#">Download CV</a>
         </nav>
 
+
+        
     </header>
 
     <!-- Header - End -->
 
     <!-- Header - Start -->
-    <section>
+    <section class="container" id="hero">
     <h1>Hi I'm Bruno</h1>
-    <img src="https://source.unsplash.com/random/400x400/?ux-designer/" alt="">
+    <img src="https://source.unsplash.com/random/400x400/?ux-designer/" alt="" class="img-feat">
     </section>
 
     <!-- Header - End -->
@@ -36,9 +46,11 @@
 <section>
 <h2>Features</h2>
 
+<div class="container" id="Feature">
+
    <!-- Features 1- Start -->
 <div>
-   <img src="https://source.unsplash.com/random/120x120/?food/" alt="">
+   <img src="https://source.unsplash.com/random/120x120/?food/" alt="" class="img-feat">
 <h4>Feature 1</h4>
 </div>
  <!-- Features 1- end -->
@@ -46,7 +58,7 @@
 
    <!-- Features 2- Start -->
    <div>
-    <img src="https://source.unsplash.com/random/120x120/?food/" alt="">
+    <img src="https://source.unsplash.com/random/120x120/?food/" alt="" class="img-feat">
  <h4>Feature 2</h4>
  </div>
   <!-- Features 2- end -->
@@ -54,13 +66,13 @@
 
    <!-- Features 3- Start -->
    <div>
-    <img src="https://source.unsplash.com/random/120x120/?food/" alt="">
+    <img src="https://source.unsplash.com/random/120x120/?food/" alt="" class="img-feat">
  <h4>Feature 3</h4>
  </div>
   <!-- Features 3- end -->
 
 
-
+</div>
 </section>
  
    <!-- Features - end -->
@@ -68,8 +80,9 @@
 
 <!-- News - Start -->
 <section>
-
+<div class="container">
     <h2>Latest News</h2>
+
     <!-- News 1 - Start -->
     <div>
         <img src="https://source.unsplash.com/random/240x120/?ux,wireframe/" alt="">
@@ -96,29 +109,39 @@
     </div>
     
     <!-- News 3 - end -->
-    
-    
     <!-- News - End -->
+</div>
 </section>
     
 <!-- contact - Start -->
-<section>
+<section class="container" id="contact">
+    <div>
     <h2>Contact</h2>
-<p>Address</p>
-<p>Phone</p>
+    <p>Address</p>
+    <p>Phone</p>
+    </div>
+<div>
+<form action="#">
+    <label for="=fullname">Name</label><br />
+    <input type="text" id="fullname" placeholder="Brune Wayne"/>
 
-<form action="">
-name
-email
-message
-send
-button
+    <label for="=fullname">email</label><br />
+    <input type="email" id="email" placeholder="bruce@batman.com">
+
+    <br /><br />
+    
+    <label for="message">Message</label><br />
+<textarea  id="message" placeholder="Write a message"></textarea>
+
+<br /><br />
+
+<input type="submit" value="Send Message">
 </form>
-
+</div>
 </section>
 
 <!-- footer - Start -->
-<footer>
+<footer class="container">
 <h4>Follow Me</h4>
 linkedin instagram x
 
